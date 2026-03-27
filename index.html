@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTG Perfumes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oxanium:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="header">
+      <div class="container header__inner">
+        <a class="brand" href="#" aria-label="GTG Home">
+          <span class="brand__text">GTG</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" type="button" aria-controls="site-nav" aria-expanded="false">
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="site-nav" id="site-nav">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#shop">Shop</a></li>
+            <li><a class="nav-link" href="#fragrances">Fragrances</a></li>
+            <li><a class="nav-link" href="#about">About Us</a></li>
+            <li><a class="nav-link" href="#blog">Blog</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <a class="icon-btn" href="#" aria-label="Cart">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2Zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2ZM7.17 14h9.66c.75 0 1.4-.41 1.74-1.03L21 6H6.21L5.27 4H2v2h2l3.6 7.59-1.35 2.44C5.52 17.37 6.48 19 8 19h12v-2H8l1.1-2Z"
+                />
+              </svg>
+            </a>
+            <a class="btn btn--primary" href="#shop">Shop Now</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-label="Hero">
+        <div class="hero__bg" role="img" aria-label="Perfume background"></div>
+
+        <div class="container hero__content">
+          <div class="hero__badge">
+            <span class="hero__badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path
+                  fill="currentColor"
+                  d="M12 2l2.3 4.7 5.2.8-3.8 3.7.9 5.2L12 14.8 7.4 16.4l.9-5.2-3.8-3.7 5.2-.8L12 2Z"
+                />
+              </svg>
+            </span>
+            <span>Awarded the best perfume in the world</span>
+          </div>
+
+          <h1 class="hero__title">Live your best life.</h1>
+
+          <div class="hero__stats" aria-label="Highlights">
+            <div class="stat-pill">
+              <div class="stat-pill__value"><span class="hero-count" data-count-to="10" data-suffix="x">0</span></div>
+              <div class="stat-pill__label">power</div>
+            </div>
+            <div class="stat-pill">
+              <div class="stat-pill__value"><span class="hero-count" data-count-to="9">0</span></div>
+              <div class="stat-pill__label">ingredients</div>
+            </div>
+            <div class="stat-pill">
+              <div class="stat-pill__value">
+                <span class="hero-count" data-count-to="20000" data-suffix="+" data-format="compact">0</span>
+              </div>
+              <div class="stat-pill__label">happy customers</div>
+            </div>
+          </div>
+
+          <a class="btn btn--primary btn--shadow" href="#shop">Shop Now</a>
+        </div>
+      </section>
+
+      <section class="product" id="shop" aria-label="GTG Perfumes">
+        <div class="container product__grid">
+          <div class="gallery" id="gallery" aria-label="Product image gallery">
+            <div class="gallery__main">
+              <button class="gallery__arrow gallery__arrow--prev" id="galleryPrev" type="button" aria-label="Previous image">
+                <span aria-hidden="true">‹</span>
+              </button>
+
+              <img
+                class="gallery__image"
+                src="assets/product-main.png"
+                alt="GTG Perfumes bottle"
+                loading="eager"
+                decoding="async"
+                id="galleryImg"
+              />
+
+              <button class="gallery__arrow gallery__arrow--next" id="galleryNext" type="button" aria-label="Next image">
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+
+            <div class="gallery__dots" id="galleryDots" role="tablist" aria-label="Image selector"></div>
+
+            <div class="gallery__thumbs" id="galleryThumbs" aria-label="Thumbnails"></div>
+          </div>
+
+          <div class="product-info">
+            <div class="product-info__head">
+              <h2 class="product__title">GTG Perfumes</h2>
+              <div class="rating" aria-label="Rating 4.7 out of 5 based on 999 plus reviews">
+                <span class="rating__stars" aria-hidden="true">
+                  <span class="star star--on"></span><span class="star star--on"></span><span class="star star--on"></span
+                  ><span class="star star--on"></span><span class="star star--on"></span>
+                </span>
+                <span class="rating__text">4.7 (999+ reviews)</span>
+              </div>
+            </div>
+
+            <p class="product__desc">
+              Experience the timeless allure backed by modern artistry, captured in every bottle of our fragrance. Crafted
+              for those who seek to elevate their essence with purpose and sophistication.
+            </p>
+
+            <form class="product-form" id="productForm">
+              <fieldset class="fieldset">
+                <legend class="fieldset__legend">Choose a Fragrance</legend>
+                <div class="choice-grid">
+                  <label class="choice">
+                    <input type="radio" name="fragrance" value="lily" checked />
+                    <span class="choice__ui">
+                      <span class="choice__name">Lily</span>
+                    </span>
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="fragrance" value="rose" />
+                    <span class="choice__ui">
+                      <span class="choice__name">Rose</span>
+                    </span>
+                  </label>
+
+                  <label class="choice">
+                    <input type="radio" name="fragrance" value="original" />
+                    <span class="choice__ui choice__ui--accent">
+                      <span class="choice__name">Original</span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="fieldset">
+                <legend class="fieldset__legend">Purchase Type</legend>
+                <div class="purchase-grid">
+                  <label class="purchase-card">
+                    <input type="radio" name="purchaseType" value="single" checked />
+                    <span class="purchase-card__ui">
+                      <span class="purchase-card__badge">Most Popular</span>
+                      <span class="purchase-card__title">Single Subscription</span>
+                      <span class="purchase-card__price">
+                        <span class="purchase-card__now">$99.99</span>
+                        <span class="purchase-card__was">$146</span>
+                      </span>
+                    </span>
+                  </label>
+
+                  <label class="purchase-card">
+                    <input type="radio" name="purchaseType" value="double" />
+                    <span class="purchase-card__ui">
+                      <span class="purchase-card__title">Double Subscription</span>
+                      <span class="purchase-card__price">
+                        <span class="purchase-card__now">$169.99</span>
+                        <span class="purchase-card__was">$146</span>
+                      </span>
+                    </span>
+                  </label>
+
+                  <label class="purchase-card">
+                    <input type="radio" name="purchaseType" value="one-time" />
+                    <span class="purchase-card__ui">
+                      <span class="purchase-card__title">One Time (Free)</span>
+                      <span class="purchase-card__price">
+                        <span class="purchase-card__now">$0.00</span>
+                      </span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="subscription" id="subscriptionBox">
+                <button class="subscription__toggle" id="subscriptionToggle" type="button" aria-expanded="true">
+                  <span class="subscription__title">What’s Included</span>
+                  <span class="subscription__chev" aria-hidden="true">▾</span>
+                </button>
+
+                <div class="subscription__panel" id="subscriptionPanel">
+                  <ul class="included" id="includedList"></ul>
+                  <p class="subscription__note" id="subscriptionNote"></p>
+                </div>
+              </div>
+
+              <a class="btn btn--primary btn--full" id="addToCart" href="cart.html">Add to Cart</a>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection" id="collection" aria-label="Our Collection">
+        <div class="container collection__grid">
+          <div class="collection__left">
+            <h2 class="collection__title">Our Collection</h2>
+
+            <div class="accordion" id="collectionAccordion">
+              <div class="accordion-item is-open">
+                <button class="accordion-btn" type="button" aria-expanded="true">
+                  <span>Signature Scents</span>
+                  <span class="accordion-icon" aria-hidden="true">–</span>
+                </button>
+                <div class="accordion-panel">
+                  <p>
+                    Discover our curated line of signature perfumes, designed to become your daily companion.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-btn" type="button" aria-expanded="false">
+                  <span>Signature Scents</span>
+                  <span class="accordion-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="accordion-panel" hidden>
+                  <p>
+                    A modern set of blends that feel clean, confident, and easy to wear.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-btn" type="button" aria-expanded="false">
+                  <span>Signature Scents</span>
+                  <span class="accordion-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="accordion-panel" hidden>
+                  <p>
+                    Layer-friendly notes that work well for day-to-night and everything in between.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button class="accordion-btn" type="button" aria-expanded="false">
+                  <span>Signature Scents</span>
+                  <span class="accordion-icon" aria-hidden="true">+</span>
+                </button>
+                <div class="accordion-panel" hidden>
+                  <p>
+                    Limited drops and seasonal favorites — small batches, big personality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="collection__right" aria-hidden="true">
+            <div class="collection-card">
+              
+              <img
+                class="collection-card__fg"
+                src="assets/collection-foreground.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats" id="fragrances" aria-label="Stats">
+        <div class="container stats__bar" id="statsSection">
+          <div class="stat">
+            <div class="stat__value"><span class="percent" data-target="84" data-suffix="%">0</span></div>
+            <div class="stat__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value"><span class="percent" data-target="78" data-suffix="%">0</span></div>
+            <div class="stat__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value"><span class="percent" data-target="89" data-suffix="%">0</span></div>
+            <div class="stat__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          </div>
+          <div class="stat">
+            <div class="stat__value"><span class="percent" data-target="90" data-suffix="%">0</span></div>
+            <div class="stat__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="comparison" id="about" aria-label="Comparison table">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-head__kicker">---</div>
+            <h2 class="section-head__title">Why GTG is the #1 Choice</h2>
+          </div>
+
+          <div class="table-wrap" role="region" aria-label="Comparison" tabindex="0">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th scope="col">Qualities</th>
+                  <th scope="col" class="col-gtg">
+                    <div class="brand-colhead">
+                      <img src="assets/compare-gtg.png" alt="" loading="lazy" decoding="async" />
+                      <div class="brand-colhead__name">GTG</div>
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="brand-colhead">
+                      <img src="assets/compare-arose.png" alt="" loading="lazy" decoding="async" />
+                      <div class="brand-colhead__name">Arose</div>
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="brand-colhead">
+                      <img src="assets/compare-bella.png" alt="" loading="lazy" decoding="async" />
+                      <div class="brand-colhead__name">Bella</div>
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="brand-colhead">
+                      <img src="assets/compare-daisies.png" alt="" loading="lazy" decoding="async" />
+                      <div class="brand-colhead__name">Daisies</div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Longevity</th>
+                  <td class="col-gtg" data-ok="1"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Blend and Harmony</th>
+                  <td class="col-gtg" data-ok="1"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Skin Compatibility</th>
+                  <td class="col-gtg" data-ok="1"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Price vs. Quality</th>
+                  <td class="col-gtg" data-ok="1"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Sillage</th>
+                  <td class="col-gtg" data-ok="1"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Scent Profile</th>
+                  <td class="col-gtg" data-ok="1"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                  <td data-ok="0"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Potency Concentration</th>
+                  <td class="num col-gtg">10x</td>
+                  <td class="num">1x</td>
+                  <td class="num">1x</td>
+                  <td class="num">10x</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bottle Design Score</th>
+                  <td class="num col-gtg">9</td>
+                  <td class="num">5</td>
+                  <td class="num">6</td>
+                  <td class="num">2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="comparison__cta">
+            <a class="btn btn--primary" href="#shop">Try It Risk-Free</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">GTG</div>
+          <p class="footer__fineprint">© <span id="year"></span> GTG. All rights reserved.</p>
+        </div>
+
+        <div class="footer__cols">
+          <div class="footer-col">
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#fragrances">Fragrances</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul class="footer-links">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul class="footer-links footer-links--social">
+              <li>
+                <a href="#" aria-label="Facebook">
+                  <span class="social-icon" aria-hidden="true">f</span>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="Instagram">
+                  <span class="social-icon" aria-hidden="true">⌁</span>
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="#" aria-label="X">
+                  <span class="social-icon" aria-hidden="true">x</span>
+                  X
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__newsletter" aria-label="Newsletter">
+          <p class="footer__newsletter-text">Join our newsletter to stay up to date on features and releases.</p>
+          <form class="newsletter" id="newsletterForm">
+            <label class="sr-only" for="newsletter-email">Email</label>
+            <input id="newsletter-email" class="newsletter__input" type="email" placeholder="Enter your email" required />
+            <button class="newsletter__btn" type="submit">Subscribe</button>
+          </form>
+          <p class="footer__legal">
+            By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
